@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicación de Muro de Escalada</string>
+    <string name="app_title">Aplicación de Muro de Escalada</string>
+
+    <string name="label_hold">Presa %1$d / %2$d</string>
+    <string name="label_streak">Racha</string>
+    <string name="label_bonus">Bono</string>
+
+    <string name="button_grip">Agarrar</string>
+    <string name="button_fall">Caer</string>
+    <string name="button_reset">Reiniciar</string>
+    <string name="button_chalk">Usar Magnesio</string>
+    <string name="button_language">Idioma</string>
+
+    <string name="msg_chalk_used">¡Magnesio usado!</string>
+    <string name="msg_route_complete">¡Ruta Completa!</string>
+    <string name="msg_fallen">¡Te caíste! Pulsa Reiniciar para volver a intentarlo.</string>
+
+    <string name="content_desc_wall_image">Ilustración de un muro de escalada</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Zone colors: score/grip button color changes with the current hold's zone -->
+    <color name="zone_none">#757575</color>
+    <color name="zone_warmup">#1976D2</color>
+    <color name="zone_technical">#388E3C</color>
+    <color name="zone_crux">#F57C00</color>
+</resources>
