@@ -1,9 +1,4 @@
 package com.example.boulderwallapp
-
-/**
- * Immutable snapshot of a climbing attempt. Held by [BoulderViewModel] and survives
- * configuration changes (e.g. rotation) since the ViewModel is retained.
- */
 data class GameState(
     val score: Int = 0,
     val hold: Int = 0,

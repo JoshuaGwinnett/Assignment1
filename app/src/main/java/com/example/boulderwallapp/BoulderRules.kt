@@ -1,8 +1,5 @@
 package com.example.boulderwallapp
 
-/**
- * Static rules for the boulder route: hold count, points per zone, and zone colors.
- */
 object BoulderRules {
     const val TOTAL_HOLDS = 10
     const val FALL_PENALTY = 3

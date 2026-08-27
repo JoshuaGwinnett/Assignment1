@@ -5,10 +5,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-/**
- * Holds the current [GameState] and enforces the route's scoring rules. Being a
- * ViewModel, this state is retained across configuration changes such as rotation.
- */
 class BoulderViewModel : ViewModel() {
 
     private val _state = MutableLiveData(GameState())
@@ -23,8 +19,7 @@ class BoulderViewModel : ViewModel() {
 
         val nextHold = s.hold + 1
         val basePoints = BoulderRules.pointsForHold(nextHold)
-        // A streak of 3+ grants the next grip a +1 bonus, then the streak resets
-        // and starts counting again from the following grip.
+        // streak counter
         val bonus = if (s.streak >= BoulderRules.STREAK_BONUS_THRESHOLD) 1 else 0
         val newStreak = if (bonus > 0) 0 else s.streak + 1
         val newScore = (s.score + basePoints + bonus)
@@ -61,7 +56,7 @@ class BoulderViewModel : ViewModel() {
         _state.value = GameState()
     }
 
-    /** Returns true if chalk was actually applied (i.e. it was allowed). */
+    // check chalk
     fun onChalkUp(): Boolean {
         val s = _state.value ?: GameState()
         if (!s.canChalk) {
