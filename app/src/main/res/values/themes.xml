@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Only used as the pre-Compose window background/manifest theme; all real
+     theming (colors, light/dark) is done in Compose via ui/theme/Theme.kt. -->
 <resources>
-    <style name="Theme.BoulderWallApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/zone_technical</item>
-    </style>
+    <style name="Theme.GearRental" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
